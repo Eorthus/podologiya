@@ -1,0 +1,135 @@
+.doctors-main{
+    padding-top:60px;
+    margin-bottom: 60px;
+}
+.doctors-staff{
+    ul{
+        list-style-type: none;
+    }
+}
+.doctors-staff-card{
+
+
+    margin-bottom: 45px;
+    .doctors-staff-card-container{
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        border-radius: 32px;
+        background: $dopback_color;
+        height: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 104, 48, 0.2);
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.03);
+            .pod-btn{
+                background: $icon_color;
+            }
+        }
+    }
+    .doctors-staff-card-img{
+        position: relative;
+        display: flex;
+        max-height: 550px;
+        &::after{
+            content: "";
+        position: absolute;
+        background: transparent;
+        background-image: linear-gradient(225deg, #ffffff00 90%, #6fd38b 0%, #6fd38b 80%);
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        }
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 32px 32px 32px 0px;
+    }
+    .doctors-staff-card-info{
+        display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    display: flex;
+    flex: 1;
+    .doctors-staff-card-name{
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    .doctors-staff-card-work{
+        font-size: 20px;
+        color: $icon_color;
+        text-transform: uppercase;
+        /* font-weight: bold; */
+        margin-bottom: 15px;
+    }
+    .doctors-staff-card-ul{
+        list-style-type: none;
+    margin-bottom: 15px;
+    //font-weight: bold;
+    flex: 1;
+    li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &::before{
+            content: url(../img/quadro.png);
+            margin-right: 15px;
+            width: 30px;
+height: 30px;
+        }
+    }
+    }
+    .doctors-staff-card-btn{
+        max-width: unset;
+        margin:auto;
+        margin-top: 30px;
+        max-width: 317px;
+    }
+    .doctors-color{
+        font-size: 40px;
+        color: $icon_color;
+        font-weight: bold;
+    }
+    
+    }
+    .doctors-staff-card-age{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width:525px){
+    .doctors-staff{
+        .doctors-staff-card{
+            .doctors-staff-card-img{
+                max-height: 750px;
+            //    max-height: 668px;
+            }
+        }
+    }
+
+}
+@media (min-width:768px){
+    .doctors-staff-card{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+@media (min-width:1400px)
+{
+
+        .doctors-staff{
+            .doctors-staff-card{
+                .doctors-staff-card-img{
+                    max-height: 500px;
+                //    max-height: 668px;
+                }
+            }
+        }
+
+}

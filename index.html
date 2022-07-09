@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клиника подологии</title>
+ <link rel="stylesheet" type="text/css" href="./js/components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="position: relative;">
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title pod-h3 chekhov-h2 modal-feedback-head" id="exampleModalLabel">Закажите обратный
+            звонок</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body modal-feedback-body">
+          <p class="footer-feedback-window-p ">Имя</p>
+          <input class="modal-feedback-input" type="text" autocomplete="off" placeholder="Введите имя"
+            style="margin-bottom: 24px;">
+          <p class="footer-feedback-window-p">Телефон</p>
+          <input class="modal-feedback-input phone" autocomplete="off" type="tel" placeholder="+7(___) __-__">
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-bs-dismiss="modal"
+            class="modal-feedback-button pod-btn modal-btn pod-body2" data-bs-toggle="modal" data-bs-target="#alertModal">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+<div class="modal fade alert" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title pod-h3" id="exampleModalLabel">Данные отправлены</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Мы свяжемся с вами в ближайшее время
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="body-index">
+    <header>
+      <div class="header-menu content row">
+        <div class="header-menu-logo col-5 col-md-4"><a href="index.html">
+            <img class="header-menu-logo-img" src="./img/logo.png" alt="logo">
+          <span class="header-menu-logo-title pod-body1">Клиника <br>подологии</span>
+</a>
+        </div>
+
+
+      
+
+        <div class="header-menu-contacts col-9 col-md-4 col-xxl-3">
+          <a class="header-menu-contacts-phone pod-body2" href="tel:+7(925)322-22-32">+7(999)999-99-99</a>
+          <a class="header-menu-contacts-address pod-body3"
+          href="https://yandex.ru/maps/-/CCUN5XTsDC" target="_blank">г. Санкт-Петербург ул. Садовая 67</a>
+        </div>
+        <a href="#" class="header-menu-tg col-1"> <img src="./img/telegram.png" alt="telegram"></a>
+        <a href="#" class="header-menu-wh col-1"> <img src="./img/whatsapp.png" alt="whatsapp"></a>
+        <a href="#" class="header-menu-inst col-1"> <img src="./img/inst.png" alt="instagram"></a>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+          class="header-menu-btn btn pod-btn col pod-body2 modal-btn">Заказать звонок</button>
+
+        <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top col-2">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon">
+                <img class="navbar-toggler-icon-svg" src="./img/menu.png" alt="menu">  
+              </span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+              <div class="offcanvas-body pod-body1 ">
+                <ul class="navbar-nav justify-content-end ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">О клинике</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="doctors.html">Врачебный коллектив</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="illness.html">Заболевания</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <a class="navbar-phone" href="tel:+7(999)999-99-99">+7(999)999-99-99</a>
+                  <div class="navbar-messangers">
+                    <a class="navbar-messangers-div">
+                      <img src="./img/instwhite.png" alt="instagram">
+                    </a>
+                    <a class="navbar-messangers-div">
+                      <img src="./img/whatsappwhite.png" alt="whatsapp">
+                    </a>
+                    <a class="navbar-messangers-div">
+                      <img src="./img/tgwhite.png" alt="telegram">
+                    </a>
+                    <!--icons from icons8.ru-->
+                  </div>
+                  <span class="navbar-info pod-body2">
+                    Клиника Подологии
+                  </span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <main >
+      <section class="header-container content section0">
+        <div class="header-slider">
+        <div class="header-slider-slide">
+          <div class="header-slider-slide-info">
+            <span class="header-slider-slide-info-h pod-h3"> <span
+                class="header-slider-slide-info-h-color">КЛИНИКА ПОДОЛОГИИИ</span></span>
+          <span class="header-slider-slide-info-p font-size">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, dolor enim facere soluta optio ipsum eaque modi hic repellendus, perferendis aliquid asperiores necessitatibus repellat cupiditate, iste aspernatur temporibus at reiciendis.</span>
+          <button class=" pod-btn  header-slider-slide-info-btn" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">Заказать звонок</button>
+          </div>
+          
+        </div>
+
+      </div>
+
+        <div class="header-banner">
+          <img src="./img/back13.png" alt="banner">
+               <!--img from <a href='https://ru.freepik.com/photos/nail'>Nail фото создан(а) valuavitaly - ru.freepik.com</a>-->
+  </div>
+      </section>
+
+<section class="index-about content">
+<span class="index-h index-about-h pod-h3">О клинике</span>
+<span class="index-about-p font-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eaque earum accusamus maiores quaerat eius debitis repudiandae necessitatibus pariatur deserunt distinctio doloremque, dolorem beatae amet delectus quos laborum adipisci! Cupiditate?</span>
+<span class="index-about-p font-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eaque earum accusamus maiores quaerat eius debitis repudiandae necessitatibus pariatur deserunt distinctio doloremque, dolorem beatae amet delectus quos laborum adipisci! Cupiditate? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam natus rem iste quis voluptatum pariatur fuga laborum aut dolorem, distinctio sint dolor omnis aliquam ipsam voluptate accusantium, facilis ea vitae.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam illo accusamus enim praesentium ex. Quod tenetur, incidunt rem voluptatibus quidem minima quibusdam voluptatem, fugiat perspiciatis expedita distinctio ratione aliquid temporibus!</span>
+<span class="index-about-p font-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eaque earum accusamus maiores quaerat eius debitis repudiandae necessitatibus pariatur deserunt distinctio doloremque, dolorem beatae amet delectus quos laborum adipisci! Cupiditate?</span>
+</section>
+
+<section class="index-doctor content">
+  <span class="index-h index-doctor-h pod-h3">Главный врач</span>
+  <div class="index-doctor-flex">
+
+  <div class="index-doctor-left">
+<ul class="index-doctor-list font-size">
+    <li class="index-doctor-list-li  row">
+  <!--  <div class="index-doctor-list-li-number col-1"><span>1</span></div>-->  
+      <div class="index-doctor-list-li-text col-9"> <span>Lorem ipsum dolor sit amet consectetur.
+      </span> </div>
+    </li>
+    <li class="index-doctor-list-li   row">
+  <!--  <div class="index-doctor-list-li-number col-1"><span>1</span></div>-->  
+      <div class="index-doctor-list-li-text col-9"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate</span> </div>
+    </li>
+    <li class="index-doctor-list-li  row">
+  <!--  <div class="index-doctor-list-li-number col-1"><span>1</span></div>-->  
+      <div class="index-doctor-list-li-text col-9"> <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ullam voluptas inventore incidunt quisquam quos sed.
+         </span> </div>
+    </li>
+    <li class="index-doctor-list-li  row">
+      <!--  <div class="index-doctor-list-li-number col-1"><span>1</span></div>-->  
+      <div class="index-doctor-list-li-text col-9"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, explicabo optio eius commodi</span> </div>
+    </li>
+ </ul>
+ <button class="index-doctor-btn pod-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить консультацию</button>
+</div>
+<div class="index-doctor-right">
+<div class="index-doctor-img">
+  <img src="./img/doctor.jpg" alt="doctor">
+  <!--photo from <a href='https://ru.freepik.com/photos/people'>People фото создан(а) wirestock - ru.freepik.com</a>-->
+</div>
+<span class="index-doctor-title font-size">Анна Каренина</span>
+</div>
+</div>
+</section>
+
+<section class="index-benefits content">
+<span class="index-h index-benefits-h pod-h3">Наши преимущества</span>
+<div class="index-benefits-list font-size">
+  <ul class="index-benefits-list-ul row seo-body1 ">
+    <li class="index-benefits-list-ul-li col-md-6 col-lg-3">
+      <div class="index-benefits-list-ul-li-img"><img src="./img/benefit1.png" alt="item"></div>
+      <span class="index-benefits-list-ul-li-span">Всегда низкие цены и скидки</span>
+    </li>
+    <li class="index-benefits-list-ul-li col-md-6 col-lg-3 ">
+      <div class="index-benefits-list-ul-li-img"><img src="./img/benefit4.png" alt="item"></div>
+      <span class="index-benefits-list-ul-li-span">Новейшие технологии</span>
+    </li>
+    <li class="index-benefits-list-ul-li col-md-6 col-lg-3">
+      <div class="index-benefits-list-ul-li-img"><img src="./img/benefit8.png" alt="item"></div>
+      <span class="index-benefits-list-ul-li-span">Индивидуальный подход</span>
+    </li>
+    <li class="index-benefits-list-ul-li col-md-6 col-lg-3">
+      <div class="index-benefits-list-ul-li-img"><img src="./img/benefit10.png" alt="item"></div>
+      <span class="index-benefits-list-ul-li-span">Квалифицированные врачи</span>
+    </li>
+  </ul>
+
+</div>
+</section>
+
+
+
+<section class="index-prices content ">
+  <span class="index-prices-h2 index-h pod-h3">Услуги</span>
+  <ul class="index-prices-gallery row font-size">
+      <li class="col-12 col-sm-6 col-xxl-4">
+          <a href="./illness.html">
+              <img src="img/price6.jpg" alt="price1">
+              <div class="index-prices-gallery-price">
+
+                  <p class="index-prices-gallery-price-p">Протезирование</p>
+                  <p class="index-prices-gallery-price-p">от
+                      <span class="index-prices-gallery-price-p-span">
+                          1000
+                      </span>
+                      /м<sup>2</sup>
+                  </p>
+
+              </div>
+          </a>
+      </li>
+      <li class="col-12 col-sm-6 col-xxl-4">
+        <a href="./illness.html">
+              <img src="img/price5.jpg" alt="price2">
+              <div class="index-prices-gallery-price">
+
+                  <p class="index-prices-gallery-price-p">Педикюр</p>
+                  <p class="index-prices-gallery-price-p">от
+                      <span class="index-prices-gallery-price-p-span">
+                          1000
+                      </span>
+                      /м<sup>2</sup>
+                  </p>
+
+              </div>
+          </a>
+      </li>
+      <li class="col-12 col-sm-6 col-xxl-4">
+        <a href="./illness.html">
+              <img src="img/price4.jpg" alt="price3">
+              <div class="index-prices-gallery-price">
+
+                  <p class="index-prices-gallery-price-p">ЛФК</p>
+                  <p class="index-prices-gallery-price-p">от
+                      <span class="index-prices-gallery-price-p-span">
+                          1000
+                      </span>
+                      /м<sup>2</sup>
+                  </p>
+
+              </div>
+          </a>
+      </li>
+      <li class="col-12 col-sm-6 col-xxl-4">
+        <a href="./illness.html">
+              <img src="img/price1.jpg" alt="price4">
+              <div class="index-prices-gallery-price">
+
+                  <p class="index-prices-gallery-price-p">Корректирующие системы</p>
+                  <p class="index-prices-gallery-price-p">от
+                      <span class="index-prices-gallery-price-p-span">
+                          1000
+                      </span>
+                      /м<sup>2</sup>
+                  </p>
+
+              </div>
+          </a>
+      </li>
+      <li class="col-12 col-sm-6 col-xxl-4">
+        <a href="./illness.html">
+              <img src="img/price3.jpg" alt="price5">
+              <div class="index-prices-gallery-price">
+
+                  <p class="index-prices-gallery-price-p">Ортезы</p>
+                  <p class="index-prices-gallery-price-p">от
+                      <span class="index-prices-gallery-price-p-span">
+                          1000
+                      </span>
+                      /м<sup>2</sup>
+                  </p>
+
+              </div>
+          </a>
+      </li>
+      <li class="col-12 col-sm-6 col-xxl-4">
+        <a href="./illness.html">
+              <img src="img/price2.jpg" alt="price6">
+              <div class="index-prices-gallery-price">
+
+                  <p class="index-prices-gallery-price-p">Ортозы</p>
+                  <p class="index-prices-gallery-price-p">от
+                      <span class="index-prices-gallery-price-p-span">
+                          1000
+                      </span>
+                      /м<sup>2</sup>
+                  </p>
+
+
+              </div>
+          </a>
+      </li>
+  </ul>
+  <a class="index-prices-button pod-btn font-size" href="illness.html">Подробнее</a>
+</section>
+
+
+<section class="index-map ">
+  <div class="index-map-contacts content ">
+    <span class="index-h index-map-h pod-h3">Контакты</span>
+    <div class="contacts-main-content-item cont-addr col-12  ">
+      <span class="contacts-main-content-item-p">Адрес</span>
+      <a class="contacts-main-content-item-span pod-body1 " target="_blank" href="https://yandex.ru/maps/-/CCUN5XTsDC">г. Санкт-Петербург, ул.Садовая 67</a>
+  </div>
+  <div class="contacts-main-content-item cont-docs col-12 ">
+    <span class="contacts-main-content-item-p">График работы</span>
+    <span class="contacts-main-content-item-span pod-body1 ">10:00 - 19:00</span>
+</div>
+<div class="contacts-main-content-item cont-tel  col-12  ">
+  <span class="contacts-main-content-item-p ">Отдел по работе с клиентами</span>
+  <a class="contacts-main-content-item-span pod-body1 " href="tel:+7(999)999-99-99">+7(999)999-99-99</a>
+</div>
+<div class="contacts-main-content-item cont-mail1  col-12  ">
+  <span class="contacts-main-content-item-p">Отдел по работе с клиентами</span>
+  <a class="contacts-main-content-item-span pod-body1 " href="mailto:surname@domen.ru">surname@domen.ru</a>
+</div>
+  </div>
+  <div class="index-map-container">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12a28fdfd081eecee5164ff1bdc84e052018809e0837596b9275fc0e1e98c40a&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+
+  </div>
+</section>
+
+<section class="index-feedback content">
+  <div style="max-width:560px;height:800px;overflow:hidden;position:relative;margin:auto"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/110245053573?comments"></iframe><a href="https://yandex.ru/maps/org/uchet_tovarov_i_kliyentov_studiya_web_razrabotki_mastervisor_ru/110245053573/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Учет товаров и клиентов, студия web разработки Mastervisor.ru на карте Санкт‑Петербурга — Яндекс Карты</a></div>
+</section>
+    </main>
+    <footer>
+      <div class="content">
+     
+        <div class="footer-bottom row">
+          <div class="footer-logo col-md-4 col-xxl-2">
+            <a href="index.html"><img class="footer-logo-img" src="./img/logo.png" alt="logo"></a>
+            <span class="footer-logo-p pod-body2">КЛИНИКА ПОДОЛОГИИ</span>
+          </div>
+          
+          <div class="footer-contacts col-md-7 col-xxl-3">
+            <div class="footer-contacts-container">
+            <a class="footer-contacts-phone pod-body1" href="tel:+7(999)999-99-99">+7(999)999-99-99</a>
+            <div class="footer-emails col-md-7 col-xxl-2">
+              <div class="footer-emails-manager ">
+                <span class="footer-emails-manager-email pod-body1"
+                  >10:00-19:00</span>
+   
+              </div>
+            </div>
+            <div class="footer-emails col-md-7 col-xxl-2">
+              <div class="footer-emails-manager pod-body3">
+                <a class="footer-emails-manager-email pod-body2"
+                  href="mailto:manager@seobservice.ru">brand@domen.ru </a>
+   
+              </div>
+            </div>
+          </div>
+            <div class="footer-contacts-messangers">
+            <a href="#" class="footer-contacts-messangers-a"><img src="./img/whatsapp.png" alt="whatsapp"></a>
+     <a href="#" class="footer-contacts-messangers-a"> <img src="./img/telegram.png" alt="telegram"></a>
+     <a href="#" class="footer-contacts-messangers-a"> <img src="./img/inst.png" alt="instagram"></a>
+  
+            </div>
+          </div>
+
+          <button class="footer-btn pod-btn col-md-4 col-xxl-2 pod-body2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Заказать звонок</button>
+          <div class="footer-menu col-md-8 col-xxl-5 row pod-body1">
+            <a href="./index.html" class="col-md-6 col-xxl-6">О клинике</a>
+            <a href="./doctors.html" class="col-md-6 col-xxl-6">Врачебный коллектив</a>
+            <a href="./illness.html" class="col-md-6 col-xxl-6">Заболевания</a>
+            <a href="./contacts.html" class="col-md-6 col-xxl-6">Контакты</a>
+          </div>
+          <div class="footer-laws col-md-12">
+            <div class="footer-laws-docs pod-body2">
+              <span class="footer-laws-docs-ogrn">огрн: 9999999999999</span>
+              <span class="footer-laws-docs-inn">инн: 99999999999</span>
+            </div>
+            <div class="footer-laws-politic">
+              <a class="footer-laws-politic-link" href="#"  >Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+
+   <script type="text/javascript" src="./js/components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="./js/components/jquery/dist/jquery.min.js"></script>
+ <script src="./js/main2.js"></script>
+
+</body>
+
+</html>

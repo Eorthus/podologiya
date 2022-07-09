@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заболевания</title>
+ <link rel="stylesheet" type="text/css" href="./js/components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="position: relative;">
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title pod-h3 chekhov-h2 modal-feedback-head" id="exampleModalLabel">Закажите обратный
+            звонок</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body modal-feedback-body">
+          <p class="footer-feedback-window-p ">Имя</p>
+          <input class="modal-feedback-input" type="text" autocomplete="off" placeholder="Введите имя"
+            style="margin-bottom: 24px;">
+          <p class="footer-feedback-window-p">Телефон</p>
+          <input class="modal-feedback-input phone" autocomplete="off" type="tel" placeholder="+7(___) __-__">
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-bs-dismiss="modal"
+            class="modal-feedback-button pod-btn modal-btn pod-body2" data-bs-toggle="modal" data-bs-target="#alertModal">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+<div class="modal fade alert" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title pod-h3" id="exampleModalLabel">Данные отправлены</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Мы свяжемся с вами в ближайшее время
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="body-index">
+    <header>
+      <div class="header-menu content row">
+        <div class="header-menu-logo col-5 col-md-4"><a href="index.html">
+            <img class="header-menu-logo-img" src="./img/logo.png" alt="logo">
+          <span class="header-menu-logo-title pod-body1">Клиника <br>подологии</span>
+</a>
+        </div>
+
+
+      
+
+        <div class="header-menu-contacts col-9 col-md-4 col-xxl-3">
+          <a class="header-menu-contacts-phone pod-body2" href="tel:+7(925)322-22-32">+7(999)999-99-99</a>
+          <a class="header-menu-contacts-address pod-body3"
+          href="https://yandex.ru/maps/-/CCUN5XTsDC" target="_blank">г. Санкт-Петербург ул. Садовая 67</a>
+        </div>
+        <a href="#" class="header-menu-tg col-1"> <img src="./img/telegram.png" alt="telegram"></a>
+        <a href="#" class="header-menu-wh col-1"> <img src="./img/whatsapp.png" alt="whatsapp"></a>
+        <a href="#" class="header-menu-inst col-1"> <img src="./img/inst.png" alt="instagram"></a>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+          class="header-menu-btn btn pod-btn col pod-body2 modal-btn">Заказать звонок</button>
+
+        <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top col-2">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon">
+                <img class="navbar-toggler-icon-svg" src="./img/menu.png" alt="menu">  
+              </span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+              <div class="offcanvas-body pod-body1 ">
+                <ul class="navbar-nav justify-content-end ">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">О клинике</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="doctors.html">Врачебный коллектив</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="illness.html">Заболевания</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Контакты</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <a class="navbar-phone" href="tel:+7(999)999-99-99">+7(999)999-99-99</a>
+                  <div class="navbar-messangers">
+                    <a class="navbar-messangers-div">
+                      <img src="./img/instwhite.png" alt="instagram">
+                    </a>
+                    <a class="navbar-messangers-div">
+                      <img src="./img/whatsappwhite.png" alt="whatsapp">
+                    </a>
+                    <a class="navbar-messangers-div">
+                      <img src="./img/tgwhite.png" alt="telegram">
+                    </a>
+                    <!--icons from icons8.ru-->
+                  </div>
+                  <span class="navbar-info pod-body2">
+                    Клиника Подологии
+                  </span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <main >
+      <section class="doctors-staff illness-cards content">
+        <span class="index-h doctors-staff-h pod-h3">Заболевания</span>
+    
+        <ul class="doctors-staff-container row">
+    <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+        <a class="doctors-staff-card-container" href="./ill_card.html">
+    <div class="doctors-staff-card-img">
+        <img src="./img/illness1.jpg" alt="doctor">
+          <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+    </div>
+    <div class="doctors-staff-card-info">
+        <span class="doctors-staff-card-name">Вросший ноготь</span>
+      <span class=" pod-btn illness-cards-link">&#8594;</span>
+    </div>
+  </a>
+    
+    </li>
+    <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+      <a class="doctors-staff-card-container" href="./ill_card.html">
+        <div class="doctors-staff-card-img">
+            <img src="./img/illness2.jpg" alt="doctor">
+              <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+        </div>
+        <div class="doctors-staff-card-info">
+            <span class="doctors-staff-card-name">Травма ногтя</span>
+            <span class="pod-btn  illness-cards-link">&#8594;</span>
+        </div>
+        
+      </a>
+        </li>
+        <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+          <a class="doctors-staff-card-container" href="./ill_card.html">
+            <div class="doctors-staff-card-img">
+                <img src="./img/illness1.jpg" alt="doctor">
+                  <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+            </div>
+            <div class="doctors-staff-card-info ">
+                <span class="doctors-staff-card-name">Мозоли</span>
+                <span class=" pod-btn  illness-cards-link">&#8594;</span>
+            </div>
+          </a>
+            
+            </li>
+            <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+              <a class="doctors-staff-card-container" href="./ill_card.html">
+                <div class="doctors-staff-card-img">
+                    <img src="./img/illness2.jpg" alt="doctor">
+                      <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+                </div>
+                <div class="doctors-staff-card-info ">
+                    <span class="doctors-staff-card-name">Псориаз ногтей</span>
+                    <span class="pod-btn  illness-cards-link">&#8594;</span>
+                </div>
+              </a>
+                
+                </li>
+                <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+                  <a class="doctors-staff-card-container" href="./ill_card.html">
+                    <div class="doctors-staff-card-img">
+                        <img src="./img/illness1.jpg" alt="doctor">
+                          <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+                    </div>
+                    <div class="doctors-staff-card-info ">
+                        <span class="doctors-staff-card-name">Онихолизис</span>
+                        <span class=" pod-btn illness-cards-link">&#8594;</span>
+                    </div>
+                  </a>
+                    
+                    </li>
+                  </li>
+                  <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+                    <a class="doctors-staff-card-container" href="./ill_card.html">
+                      <div class="doctors-staff-card-img">
+                          <img src="./img/illness2.jpg" alt="doctor">
+                            <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+                      </div>
+                      <div class="doctors-staff-card-info ">
+                          <span class="doctors-staff-card-name">Гиперкератоз</span>
+                          <span class=" pod-btn illness-cards-link">&#8594;</span>
+                      </div>
+                    </a>
+                      
+                      </li>
+
+                    </li>
+                    <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+                      <a class="doctors-staff-card-container" href="./ill_card.html">
+                        <div class="doctors-staff-card-img">
+                            <img src="./img/illness1.jpg" alt="doctor">
+                              <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+                        </div>
+                        <div class="doctors-staff-card-info ">
+                            <span class="doctors-staff-card-name">Онихогрифоз</span>
+                            <span class="pod-btn  illness-cards-link">&#8594;</span>
+                        </div>
+                      </a>
+                        
+                        </li>
+
+                      </li>
+                      <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+                        <a class="doctors-staff-card-container" href="./ill_card.html">
+                          <div class="doctors-staff-card-img">
+                              <img src="./img/illness2.jpg" alt="doctor">
+                                <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+                          </div>
+                          <div class="doctors-staff-card-info ">
+                              <span class="doctors-staff-card-name">Онихомикоз</span>
+                              <span class=" pod-btn  illness-cards-link">&#8594;</span>
+                          </div>
+                        </a>
+                          
+                          </li>
+                        </li>
+                        <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+                          <a class="doctors-staff-card-container" href="./ill_card.html">
+                            <div class="doctors-staff-card-img">
+                                <img src="./img/illness1.jpg" alt="doctor">
+                                  <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+                            </div>
+                            <div class="doctors-staff-card-info ">
+                                <span class="doctors-staff-card-name">Диабетическая стопа</span>
+                                <span class="pod-btn  illness-cards-link">&#8594;</span>
+                            </div>
+                          </a>
+                            
+                            </li>
+                          </li>
+                          <li class="doctors-staff-card col-12 col-md-6 col-xxl-4">
+                            <a class="doctors-staff-card-container" href="./ill_card.html">
+                              <div class="doctors-staff-card-img">
+                                  <img src="./img/illness2.jpg" alt="doctor">
+                                    <!--photo from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>-->
+                              </div>
+                              <div class="doctors-staff-card-info ">
+                                  <span class="doctors-staff-card-name">Онихолизис</span>
+                                  <span class="pod-btn  illness-cards-link">&#8594;</span>
+                              </div>
+                            </a>
+                              
+                              </li>
+        </ul>
+    </section>
+    </main>
+    <footer>
+      <div class="content">
+     
+        <div class="footer-bottom row">
+          <div class="footer-logo col-md-4 col-xxl-2">
+            <a href="index.html"><img class="footer-logo-img" src="./img/logo.png" alt="logo"></a>
+            <span class="footer-logo-p pod-body2">КЛИНИКА ПОДОЛОГИИ</span>
+          </div>
+          
+          <div class="footer-contacts col-md-7 col-xxl-3">
+            <div class="footer-contacts-container">
+            <a class="footer-contacts-phone pod-body1" href="tel:+7(999)999-99-99">+7(999)999-99-99</a>
+            <div class="footer-emails col-md-7 col-xxl-2">
+              <div class="footer-emails-manager ">
+                <span class="footer-emails-manager-email pod-body1"
+                  >10:00-19:00</span>
+   
+              </div>
+            </div>
+            <div class="footer-emails col-md-7 col-xxl-2">
+              <div class="footer-emails-manager pod-body3">
+                <a class="footer-emails-manager-email pod-body2"
+                  href="mailto:manager@seobservice.ru">brand@domen.ru </a>
+   
+              </div>
+            </div>
+          </div>
+            <div class="footer-contacts-messangers">
+            <a href="#" class="footer-contacts-messangers-a"><img src="./img/whatsapp.png" alt="whatsapp"></a>
+     <a href="#" class="footer-contacts-messangers-a"> <img src="./img/telegram.png" alt="telegram"></a>
+     <a href="#" class="footer-contacts-messangers-a"> <img src="./img/inst.png" alt="instagram"></a>
+  
+            </div>
+          </div>
+
+          <button class="footer-btn pod-btn col-md-4 col-xxl-2 pod-body2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Заказать звонок</button>
+          <div class="footer-menu col-md-8 col-xxl-5 row pod-body1">
+            <a href="./index.html" class="col-md-6 col-xxl-6">О клинике</a>
+            <a href="./doctors.html" class="col-md-6 col-xxl-6">Врачебный коллектив</a>
+            <a href="./illness.html" class="col-md-6 col-xxl-6">Заболевания</a>
+            <a href="./contacts.html" class="col-md-6 col-xxl-6">Контакты</a>
+          </div>
+          <div class="footer-laws col-md-12">
+            <div class="footer-laws-docs pod-body2">
+              <span class="footer-laws-docs-ogrn">огрн: 9999999999999</span>
+              <span class="footer-laws-docs-inn">инн: 99999999999</span>
+            </div>
+            <div class="footer-laws-politic">
+              <a class="footer-laws-politic-link" href="#"  >Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+
+   <script type="text/javascript" src="./js/components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="./js/components/jquery/dist/jquery.min.js"></script>
+ <script src="./js/main2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+footer{
+  //  min-height: 1250px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 104, 48, 0.2);
+    padding-top: 16px;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+color:$font_color;
+position: relative;
+    .footer-logo{
+        margin-bottom: 25px;
+        max-width: 100px;
+        left: 0;
+        position: absolute;
+        img{
+            max-width: 100px;
+    width: 100%;
+}
+.footer-logo-p{
+    display: none;
+    font-weight: bold;
+}
+        }
+        .footer-contacts{
+           // margin-bottom: 16px;
+            padding-left: 105px;
+    margin-top: 16px;
+            .footer-contacts-phone{
+               // color: white;
+               transition: 0.5s;
+               &:hover{
+                color:$icon_color;
+            }
+    font-weight: 700;
+            }
+            .footer-contacts-messangers{
+                display: none;
+                
+        
+                a{
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+
+            }
+        }
+        .footer-emails{
+            margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2){
+        margin-bottom: 0px;
+        .footer-emails-manager{
+            margin-bottom: 0px;
+        }
+    }
+    .footer-emails-manager{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        
+        .footer-emails-manager-email{
+         //   color: white;
+         white-space: nowrap;
+    //font-weight: 700;
+    transition: 0.5s;
+    &:hover{
+     color:$icon_color;
+ }
+        }
+
+    }
+    .footer-emails-support{
+        display: flex;
+    flex-direction: column;
+    }
+}
+    .footer-btn{
+        max-width: 100%;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+  
+        padding-bottom: 30px;
+    
+        a{
+      //      color: white !important;
+    margin-bottom: 16px;
+    transition: 0.5s;
+    &:hover{
+        color:$icon_color;
+    }
+        }
+    }
+    .footer-laws{
+     //   color: white;
+    margin-bottom: 16px;
+    border-top: 1px solid $icon_color;
+    padding-top: 16px;
+    .footer-laws-docs{
+        text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+   // padding-bottom: 30px;
+   // border-bottom:1px solid  $subfont_color;
+}
+.footer-laws-politic{
+  //  margin-top: 10px;
+    order:1;
+    .footer-laws-politic-link{
+    //    color:white !important;
+    }
+}
+.footer-laws-c{
+    display: block;
+    margin-bottom: 17px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+}
+   
+    }
+footer{
+    .content{
+       // position:relative;
+        overflow:visible;
+    }
+}
+
+
+    @media (min-width:768px){
+        footer{
+         //   min-height: 817px;
+         padding-top: 24px;
+        } 
+      
+        .footer-bottom{
+            flex-direction: row;
+            .footer-logo{
+                order: 1;
+    //padding-bottom: 30px;
+    padding-right: 10%;
+  //  margin-bottom: 0;
+  //  border-bottom: 1px solid $icon_color;
+    max-width: unset;
+    position: unset;
+    .footer-logo-p{
+        display: block;
+    margin-top: 16px;
+ //   color: white;
+    }
+            }
+            .footer-contacts{
+                order: 4;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    .footer-contacts-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contacts-phone{
+        margin-left: 24px;
+        margin-right: 24px;
+        min-width: 200px;
+      
+    }
+    .footer-contacts-messangers{
+        display: flex;
+        margin: auto;
+    height: 100%;
+    margin-left: 10px;
+        .footer-contacts-messangers-a{
+            margin: 15px;
+            width: 40px;
+    height: 40px;
+    display: block;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+            &:last-child{
+                margin-right:0;
+            }
+        }
+    }
+}
+      .footer-emails{
+        flex-direction: row;
+        margin-bottom: 0px;
+        margin-left: 24px;
+        margin-right: 24px;
+        order: 5;
+        .footer-emails-manager{
+            margin-right: 38px;
+            margin-bottom: 0px;
+        }
+      }      
+      .footer-btn{
+        order: 3;
+        max-width: 242px;
+        margin-top: 32px;
+    
+      }
+      .footer-menu{
+        order: 2;
+        flex-direction: row;
+    //    border-bottom: 1px solid $icon_color;
+        height: 100%;
+      }
+      .footer-laws{
+        order: 6;
+        display: flex;
+        flex-direction: column-reverse;
+        //margin-bottom: 33px;
+        border-top:1px solid $icon_color;
+
+        
+        .footer-laws-docs{
+            flex-direction: row;
+    border-bottom: none;
+    padding-bottom: 0;
+    .footer-laws-docs-ogrn{
+        margin-right: 30px;
+    }
+        }
+        .footer-laws-politic{
+            //margin-top: 20px;
+        }
+        .footer-laws-c{
+         //   margin-top:20px;
+            margin-bottom:0px;
+        }
+      }
+        }
+
+    }
+    @media (min-width:992px){
+        footer{
+          //  min-height: 720px;
+          padding-top: 50px;
+        }
+
+    .footer-contacts-messangers{
+        margin-top: 12px;
+    }
+    }
+@media (min-width:1400px){
+    footer{
+      //  min-height: 600px;
+    }
+
+    .footer-bottom{
+        justify-content: space-between;
+        .footer-logo{
+            max-width:150px;
+            padding-right:0;
+            border-bottom:none;
+        }
+        .footer-contacts{
+            order: 4;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 0px;
+    .footer-contacts-messangers{
+        margin-left: 10px;
+    }
+
+        }
+        .footer-emails{
+            flex-direction: column;
+    order: 3;
+    padding-left: 0;
+    padding-right: 10px;
+
+        }
+        .footer-btn{
+            order: 5;
+    margin-top: 0;
+    width:170px;
+        }
+        .footer-menu{
+            padding-left: 20px;
+            border-bottom:none;
+        }
+        .footer-laws{
+            flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  //  margin-bottom: 54px;
+    .footer-laws-docs{
+     //   margin-top: 30px;
+        order:3;
+
+    }
+    .footer-laws-politic{
+   //     margin-top: 30px;
+        order:2;
+    }
+    .footer-laws-c{
+        margin-top: 30px;
+        order:1
+    }
+
+        }
+    }
+}
+@media (min-width:1700px){
+    .footer-bottom{
+        .footer-btn{
+            width:200px;
+        }
+    }
+}
+
+@media (min-width:1900px){
+    .footer-bottom{
+        .footer-btn{
+            width:242px;
+        }
+    }
+}

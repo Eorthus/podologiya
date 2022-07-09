@@ -1,0 +1,414 @@
+.contacts-main{
+    background-color:$dopback_color;
+
+    .contacts-main-container{
+        color: $font_color;
+    margin-bottom: 65px;
+    margin-top: 56px;
+    .contacts-main-content{
+        margin-top: 40px;
+        .cont-tel{
+            a{
+            font-size: 30px;
+            }
+        }
+
+
+    }
+}
+.contacts-main-h{
+    color:$icon_color;
+}
+}
+.contacts-main-content-item{
+    display: flex;
+flex-direction: column;
+padding:10px;
+a{
+color:$font_color;
+}
+.contacts-main-content-item-flex{
+display: flex;
+.contacts-main-content-item-span{
+transition: 0.5s;
+width: 50px;
+&:hover{
+transform: scale(1.1);
+}
+img{
+width: 100%;
+}
+}
+}
+.contacts-main-content-item-span{
+margin-bottom: 30px;
+margin-top: 12px;
+font-weight: 700;
+margin-right: 15px;
+transition: 0.5s;
+&:hover{
+color:$icon_color;
+}
+
+}
+
+}
+.contacts-map{
+    height:600px;
+   overflow: hidden;
+    object-fit: cover;
+    opacity: 0.92;
+}
+.contacts-task{
+    padding-bottom: 480px;
+    background: $background_color;
+    color:$font-color;
+    .contacts-task-container{
+        padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    .contacts-task-p{
+        margin-top: 16px;
+    margin-bottom: 36px;
+    }
+    .section41-p{
+        margin-bottom: 36px; 
+    }
+    .contacts-task-ul{
+        list-style-type: none;
+        .contacts-task-ul-li{
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        .form-check-input:checked {
+            background-color: $icon_color;
+            border-color: $icon_color;
+        }
+    }
+    }
+}
+
+.contacts-feedback{
+    background-image: url(../img/feedback.jpg);
+    //images from <a href='https://ru.freepik.com/photos/woman'>Woman фото создан(а) freepik - ru.freepik.com</a>
+    min-height: 542px;
+    padding: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    .contacts-feedback-form{
+        background: #ffffffdb;
+        border-radius: 10px;
+        .contacts-feedback-form-left{
+            padding: 16px;
+        }
+        .contacts-feedback-form-right{
+           // background: $icon_color;
+          //  background-image: url(../img/feedbackvector.png);
+            background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    background-position-x: 95%;
+    background-position-y: 90px;
+    color: $font_color;
+    border-radius: 0px 0px 10px 10px;
+    padding: 16px;
+    min-height: 200px;
+   // margin-top: 20px;
+        }
+        .contacts-address{
+            margin-top: 30px;
+            display: flex;
+    flex-direction: column;
+    .contacts-feedback-contacts-phone{
+        font-size: 25px !important;
+        color:$icon_color;
+    }
+    .contacts-feedback-contacts-p{
+       margin-top:15px;
+    }
+        }
+    }
+    .contacts-feedback-form-h{
+        font-weight: 500;
+        margin-bottom: 14px;
+        color:$font_color;
+        }
+        .contacts-feedback-form-p{
+            margin-top: 20px;
+        margin-bottom: 4px;
+        font-size: 16px;
+        
+        }
+        .contacts-feedback-form-input{
+            margin-bottom: 24px;
+            height: 54px;
+      
+            width: 100%;
+            border: 1px solid gray;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .contacts-feedback-form-btn{
+        font-weight: 600 !important;
+        max-width: none;
+        }
+        .contacts-feedback-contacts-p{
+            font-size: 16px;
+            margin-bottom: 4px;
+            z-index: 1;
+        }
+        .contacts-feedback-contacts-phone{
+            font-size: 25px;
+        font-weight: bold;
+        z-index: 1;
+        color: $icon_color;
+     //   margin-bottom: 13px;
+     transition: 0.5s;
+     &:hover{
+        color:$icon_color;
+     }
+       
+        }
+        .contacts-feedback-contacts-messangers{
+            display: flex;
+            margin-top: 15px;
+        }
+        .contacts-feedback-contacts-messangers-a{
+            margin-right:25px;
+            z-index: 1;
+            display: block;
+    width: 40px;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    img{
+        width: 100%;
+    }
+        }
+}
+
+@media (min-width:400px){
+    .contacts-feedback .contacts-feedback-contacts .contacts-feedback-contacts-container .contacts-feedback-contacts-phone {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:768px){
+    .contacts-main{
+        .contacts-main-container{
+        margin-bottom: 50px;
+        margin-top: 68px;
+        .contacts-main-content{
+            margin-top: 50px;
+            .cont-tel{
+                order:1;
+            }
+            .cont-mail1{
+order:2;
+            }
+            .cont-mail2{
+order:4
+            }
+.cont-addr{
+order:3;
+}
+.cont-docs{
+order:5
+}
+.cont-inst{
+order:6;
+}
+        }
+        }
+    }
+
+    .contacts-map{
+        height:500px;
+   
+        object-fit: cover;
+    }
+    .contacts-task{
+        .contacts-task-container{
+            padding-top: 80px;
+        padding-bottom: 60px;
+    
+        }
+    }
+    .contacts-feedback{
+        padding: 50px;
+        .contacts-feedback-form{
+            max-width: 800px;
+            margin: auto;
+        }
+        .contacts-feedback-form-right{
+            padding: 24px;
+        }
+        .contacts-feedback-form-left{
+            padding: 24px;
+        }
+        .contacts-feedback-form-container{
+            display: flex;
+            .contacts-feedback-form-container-top{
+                &:first-child{
+                margin-right: 20px;
+width: 48%;
+                }
+&:last-child{
+
+width: 50%;
+}
+            }
+        }
+        .contacts-feedback-form-btn{
+            width: 100%;
+max-width: 100%;
+}
+        
+    
+
+.contacts-feedback-contacts-phone{
+font-size: 50px !important;
+}
+.contacts-feedback-contacts-messangers-a{
+img{
+    width:31px;
+}
+}
+    
+    }
+}
+@media (min-width:992px){
+    .contacts-feedback{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .contacts-feedback-form{
+            display: flex;
+            max-width: 900px;
+            flex-direction: row;
+            margin: auto;
+            .contacts-feedback-form-left{
+                width: 50%;
+    padding: 50px;
+            }
+            .contacts-feedback-form-right{
+                padding: 50px;
+                background-size: 50%;
+              
+                background-position-x: center;
+                background-position-y: 120%;
+            }
+        }
+        .contacts-feedback-form-container{
+            flex-direction: column;
+        }
+        .contacts-feedback-form-input{
+            width: 380px;
+            margin-bottom: 0;
+        }
+        .contacts-feedback-form-btn{
+            margin-top: 42px;
+            width: 274px;
+        }
+
+.contacts-feedback-contacts-phone{
+    font-size: 40px !important;
+}
+    .contacts-feedback-contacts-container{
+        margin: auto;
+    }
+    
+.contacts-contacts-messangers{
+    margin-top: 12px;
+}
+    }
+}
+@media (min-width:1400px){
+    .contacts-main-content-item{
+        .contacts-main-content-item-span{
+            margin-bottom: 88px;
+            margin-top: 23px;
+        }
+    }
+.contacts-main{
+    .contacts-main-container{
+        margin-top: 44px;
+        margin-bottom: 28px;
+        .contacts-main-h{
+            font-size: 60px;
+        }
+        .contacts-main-content{
+            margin-top: 75px;
+            .cont-tel{
+                a{
+                    font-size: 40px;
+                }
+            }
+
+        .cont-tel{
+            order:1;
+        }
+        .cont-mail1{
+order:2;
+        }
+        .cont-mail2{
+order:3
+        }
+.cont-addr{
+order:5;
+}
+.cont-docs{
+order:4
+}
+.cont-inst{
+order:6;
+}
+        }
+    }
+}
+.contacts-map{
+    height:660px;
+    object-fit: cover;
+}
+.contacts-task{
+    .contacts-task-container{
+        padding-top: 120px;
+    padding-bottom: 110px;
+    .contacts-task-h{
+        font-size: 60px;
+    }
+    .contacts-task-p{
+        margin-top: 16px;
+    margin-bottom: 60px;
+    }
+    .contacts-task-ul{
+    
+        .contacts-task-ul-li{
+            margin-bottom: 30px;
+       
+        }
+    }
+
+    }
+}
+.contacts-feedback{
+.contacts-feedback-form-p, input{
+  //  font-size: 24px;
+}
+.contacts-feedback-contacts-p{
+    font-size: 24px;
+}
+}
+}
+
+@media (min-width:1721px){
+    .contacts-feedback-form-h{
+    //    font-size:60px !important;
+    }
+    .contacts-feedback-form{
+        max-width: 1000px;
+    }
+}

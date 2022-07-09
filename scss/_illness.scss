@@ -1,0 +1,50 @@
+.illness-cards{
+    padding-top:60px;
+    margin-bottom: 60px;
+    background: $dopback_color;
+    .doctors-staff-card-container{
+        text-align: left;
+        background: white;
+    }
+    .doctors-staff-card-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .doctors-staff-card-name{
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-weight: normal !important;
+        }
+    }
+    .doctors-staff-card-img{
+        max-height: 328px;
+    }
+    .illness-cards-link{
+        width: 50px;
+        height: 50px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        padding-bottom: 6px;
+        font-size: 30px;
+        border-radius: 100%;
+    }
+}
+@media (min-width:525px){
+    .illness-cards{
+        .doctors-staff-card-img{
+            max-height: 380px;
+        }
+    } 
+}
+@media (min-width:1400px){
+    .illness-cards{
+        .doctors-staff-card-img{
+            max-height: 310px;
+        }
+    } 
+}
