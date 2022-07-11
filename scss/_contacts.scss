@@ -395,9 +395,6 @@ order:6;
     }
 }
 .contacts-feedback{
-.contacts-feedback-form-p, input{
-  //  font-size: 24px;
-}
 .contacts-feedback-contacts-p{
     font-size: 24px;
 }
@@ -405,9 +402,6 @@ order:6;
 }
 
 @media (min-width:1721px){
-    .contacts-feedback-form-h{
-    //    font-size:60px !important;
-    }
     .contacts-feedback-form{
         max-width: 1000px;
     }

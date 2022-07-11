@@ -124,9 +124,10 @@ position: relative;
 .footer-laws-c{
     display: block;
     margin-bottom: 17px;
+    white-space: nowrap;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 }
@@ -236,6 +237,7 @@ footer{
             flex-direction: row;
     border-bottom: none;
     padding-bottom: 0;
+    order:2;
     .footer-laws-docs-ogrn{
         margin-right: 30px;
     }
@@ -314,8 +316,9 @@ footer{
         order:2;
     }
     .footer-laws-c{
-        margin-top: 30px;
-        order:1
+        margin-top: 0;
+    //   margin-top: 30px;
+        order:2;
     }
 
         }
@@ -328,7 +331,6 @@ footer{
         }
     }
 }
-
 @media (min-width:1900px){
     .footer-bottom{
         .footer-btn{

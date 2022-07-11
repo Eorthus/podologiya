@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
 if((!document.querySelector(".contacts-map"))&(!document.querySelector(".index-map-container"))&(!document.querySelector(".index-feedback"))){
 regular();
 }
-
   //phone mask for form
   var phoneInput = document.querySelectorAll('.phone')
   phoneInput.forEach(el =>
